@@ -215,3 +215,63 @@ footer {
   .card { margin-bottom: 10px; border-radius: 11px; }
   footer { gap: 15px; flex-direction: column; }
 }
+/* Logo + Language */
+.brand-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.language-switcher {
+  position: relative;
+}
+
+#languageBtn {
+  background: none;
+  border: 0;
+  color: #92929f;
+  padding: 9px 11px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+#languageBtn:hover {
+  background: #191921;
+  color: white;
+}
+
+.language-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background: #111118;
+  border: 1px solid #292933;
+  border-radius: 12px;
+  padding: 6px;
+  min-width: 145px;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 12px 30px rgba(0,0,0,.45);
+}
+
+.language-switcher:hover .language-menu {
+  display: block;
+}
+
+.language-menu button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: 0;
+  color: #ddd;
+  padding: 10px 12px;
+  text-align: left;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.language-menu button:hover {
+  background: #191921;
+  color: white;
+}
