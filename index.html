@@ -7,68 +7,170 @@
   <title>84ui2 studio — Visual Gallery</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
   <header class="nav">
+
     <a class="brand" href="#">
       <img src="assets/logo.png" alt="84ui2 studio logo">
       <span>84ui2 <b>studio</b></span>
     </a>
+
     <nav>
       <button class="nav-link active" data-filter="all">All</button>
       <button class="nav-link" data-filter="gaming">Gaming</button>
       <button class="nav-link" data-filter="nature">Nature</button>
       <button class="nav-link" data-filter="photography">Photography</button>
     </nav>
-    <button class="upload-btn" id="uploadBtn">＋ Upload</button>
-    <input id="fileInput" type="file" accept="image/*" multiple hidden>
+
+    <!-- Language -->
+    <div class="language-switcher">
+
+      <button id="languageBtn">🌐 EN</button>
+
+      <div id="languageMenu" class="language-menu">
+
+        <button data-lang="en">
+          🇬🇧 English
+        </button>
+
+        <button data-lang="ar">
+          🇲🇦 العربية
+        </button>
+
+        <button data-lang="fr">
+          🇫🇷 Français
+        </button>
+
+      </div>
+
+    </div>
+
+    <button class="upload-btn" id="uploadBtn">
+      ＋ Upload
+    </button>
+
+    <input
+      id="fileInput"
+      type="file"
+      accept="image/*"
+      multiple
+      hidden
+    >
+
   </header>
 
+
   <main>
+
     <section class="hero">
+
       <div class="hero-copy">
-        <p class="eyebrow">84UI2 / VISUAL ARCHIVE</p>
-        <h1>Capture.<br><span>Play. Explore.</span></h1>
-        <p class="subtitle">A personal gallery for gaming, nature and photography.</p>
-        <button class="hero-btn" id="exploreBtn">Explore gallery <span>↓</span></button>
+
+        <p class="eyebrow">
+          84UI2 / VISUAL ARCHIVE
+        </p>
+
+        <h1>
+          Capture.<br>
+          <span>Play. Explore.</span>
+        </h1>
+
+        <p class="subtitle">
+          A personal gallery for gaming, nature and photography.
+        </p>
+
+        <button class="hero-btn" id="exploreBtn">
+          Explore gallery <span>↓</span>
+        </button>
+
       </div>
+
       <div class="hero-glow"></div>
+
     </section>
+
 
     <section class="gallery-section" id="gallery">
+
       <div class="section-head">
+
         <div>
-          <p class="eyebrow">LATEST DROPS</p>
-          <h2>Visuals</h2>
+
+          <p class="eyebrow">
+            LATEST DROPS
+          </p>
+
+          <h2>
+            Visuals
+          </h2>
+
         </div>
-        <span id="countLabel">0 images</span>
+
+        <span id="countLabel">
+          0 images
+        </span>
+
       </div>
+
 
       <div class="drop-zone" id="dropZone">
-        <strong>Drop images here</strong>
-        <span>or click to add local previews</span>
+
+        <strong>
+          Drop images here
+        </strong>
+
+        <span>
+          or click to add local previews
+        </span>
+
       </div>
 
-      <div class="masonry" id="galleryGrid"></div>
+
+      <div
+        class="masonry"
+        id="galleryGrid">
+      </div>
+
     </section>
+
   </main>
 
+
   <footer>
-    <span>© 2026 84ui2 studio</span>
-    <span>Made for visual stories.</span>
+
+    <span>
+      © 2026 84ui2 studio
+    </span>
+
+    <span>
+      Made for visual stories.
+    </span>
+
   </footer>
 
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="close" id="closeLightbox">×</button>
-    <img id="lightboxImg" alt="">
+
+  <div
+    class="lightbox"
+    id="lightbox"
+    aria-hidden="true">
+
+    <button
+      class="close"
+      id="closeLightbox">
+      ×
+    </button>
+
+    <img
+      id="lightboxImg"
+      alt="">
+
   </div>
 
+
+  <!-- JavaScript -->
   <script src="script.js"></script>
-  <div class="language-switcher">
-  <button id="languageBtn">🌐 EN</button>
-  <div id="languageMenu" class="language-menu">
-    <button data-lang="en">🇬🇧 English</button>
-    <button data-lang="ar">🇲🇦 العربية</button>
-    <button data-lang="fr">🇫🇷 Français</button>
-  </div>
+
 </body>
 </html>
